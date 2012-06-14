@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53F557F4114EA63600A3DA4B /* SDURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F557F2114EA63600A3DA4B /* SDURLCache.h */; };
+		53F557F4114EA63600A3DA4B /* SDURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F557F2114EA63600A3DA4B /* SDURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53F557F5114EA63600A3DA4B /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F557F3114EA63600A3DA4B /* SDURLCache.m */; };
 		53F5592C114F1ED800A3DA4B /* SDURLCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F5592B114F1ED800A3DA4B /* SDURLCacheTests.m */; };
 		53F559B7114F2AA600A3DA4B /* libSDURLCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libSDURLCache.a */; };
@@ -114,8 +114,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA747D9F0F9514B9006C5449 /* SDURLCache_Prefix.pch in Headers */,
 				53F557F4114EA63600A3DA4B /* SDURLCache.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* SDURLCache_Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +253,7 @@
 				GCC_PREFIX_HEADER = SDURLCache_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = SDURLCache;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -268,6 +269,7 @@
 				GCC_PREFIX_HEADER = SDURLCache_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = SDURLCache;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
